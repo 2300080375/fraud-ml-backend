@@ -6,3 +6,4 @@ numpy
 joblib
 gunicorn
 PyJWT
+python-dotenv
