@@ -1,0 +1,23 @@
+### Health
+GET http://localhost:5000/health
+
+### Suspicious transaction
+POST http://localhost:5000/predict
+Content-Type: application/json
+
+{"amount": 950, "hour": 3, "distance_from_home_km": 420, "txn_count_24h": 9, "is_foreign": 1, "card_present": 0}
+
+### Normal transaction
+POST http://localhost:5000/predict
+Content-Type: application/json
+
+{"amount": 25, "hour": 14, "distance_from_home_km": 3, "txn_count_24h": 2, "is_foreign": 0, "card_present": 1}
+
+### History
+GET http://localhost:5000/history
+
+### Stats
+GET http://localhost:5000/stats
+
+### Model metrics
+GET http://localhost:5000/metrics
